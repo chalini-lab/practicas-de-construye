@@ -3,148 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MM Perfumes | Promociones</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Playfair Display', serif;
-    }
-    body {
-      background: #fdfdfd;
-      color: #333;
-      overflow-x: hidden;
-    }
-    header {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      padding: 20px 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(255,255,255,0.9);
-      backdrop-filter: blur(8px);
-      border-bottom: 1px solid #eee;
-      z-index: 1000;
-    }
-    header h1 {
-      font-size: 1.8rem;
-      letter-spacing: 2px;
-      color: #111;
-    }
-    nav a {
-      text-decoration: none;
-      color: #555;
-      margin: 0 16px;
-      font-size: 1rem;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      color: #c19a6b;
-    }
-
-    /* 🔴 Estilo de la sección de promociones */
-    .promociones {
-      padding: 120px 60px 80px;
-      text-align: center;
-    }
-    .promociones h2 {
-      font-size: 2.5rem;
-      color: red;
-      margin-bottom: 50px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-    .perfumes {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 40px;
-    }
-    .perfume {
-      width: 260px;
-      background: #fff;
-      border-radius: 10px;
-      border: 2px solid red;
-      box-shadow: 0 5px 20px rgba(255,0,0,0.2);
-      overflow: hidden;
-      transition: 0.3s;
-      position: relative;
-    }
-    .perfume:hover {
-      transform: translateY(-8px);
-      background: #fff5f5;
-    }
-    .etiqueta {
-      position: absolute;
-      top: 10px;
-      left: -20px;
-      background: red;
-      color: white;
-      padding: 5px 20px;
-      transform: rotate(-10deg);
-      font-weight: bold;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-    }
-    .perfume img {
-      width: 100%;
-      height: 320px;
-      object-fit: cover;
-    }
-    .perfume-content {
-      padding: 15px;
-    }
-    .perfume-content h4 {
-      font-size: 1.2rem;
-      margin: 10px 0 5px;
-      color: #222;
-    }
-    .perfume-content p {
-      color: #777;
-      margin-bottom: 12px;
-    }
-    .price {
-      font-weight: bold;
-      color: #111;
-      margin-bottom: 12px;
-    }
-    .old-price {
-      text-decoration: line-through;
-      color: #888;
-      margin-right: 8px;
-    }
-    .buttons {
-      display: flex;
-      justify-content: space-between;
-      gap: 8px;
-    }
-    .add-btn, .spec-btn {
-      flex: 1;
-      padding: 10px;
-      border: none;
-      background: #c19a6b;
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: bold;
-      letter-spacing: 1px;
-      cursor: pointer;
-      transition: 0.3s;
-      font-size: 0.8rem;
-    }
-    .add-btn:hover, .spec-btn:hover {
-      background: #a67c52;
-    }
-    footer {
-      text-align: center;
-      padding: 40px;
-      background: #111;
-      color: #fff;
-      font-size: 0.9rem;
-    }
-  </style>
+  <title>Promociones | MM Perfumes</title>
+  <link rel="stylesheet" type="text/css" href="estilos tienda perfumes.css">
 </head>
 <body>
 
@@ -152,27 +12,26 @@
   <h1>MM PERFUMES</h1>
   <nav>
     <a href="index.html">Inicio</a>
-    <a href="promociones perfumes.html" style="color:red; font-weight:bold;">Promociones</a>
+    <a href="index.html#coleccion">Colección</a>
+    <a href="promociones perfumes.html">Promociones</a>
     <a href="nosotros.html">Nosotros</a>
     <a href="contacto.html">Contacto</a>
     <a href="carrito.html">Carrito 🛒</a>
   </nav>
 </header>
 
-<section class="promociones">
-  <h2>Promociones Especiales</h2>
+<section class="featured" style="padding-top:130px;">
+  <h3>Promociones Exclusivas</h3>
+  <p style="margin-bottom:40px; color:#666;">Fragancias seleccionadas con precios especiales por tiempo limitado.</p>
+
   <div class="perfumes">
 
-    <!-- 🔴 1. Dior Sauvage -->
     <div class="perfume">
-      <div class="etiqueta">-20%</div>
       <img src="https://m.media-amazon.com/images/I/61R1%2BHpKFPL._AC_UF1000,1000_QL80_.jpg" alt="Dior Sauvage">
       <div class="perfume-content">
         <h4>Dior Sauvage</h4>
-        <p>Una fragancia audaz y fresca con un toque salvaje.</p>
-        <div class="price">
-          <span class="old-price">$145</span> $116
-        </div>
+        <p>Fresco, intenso y magnético.</p>
+        <div class="price"><s>$145</s> <span style="color:red;">$120</span></div>
         <div class="buttons">
           <a href="dior.html"><button class="spec-btn">Especificaciones</button></a>
           <a href="carrito.html"><button class="add-btn">Añadir</button></a>
@@ -180,33 +39,27 @@
       </div>
     </div>
 
-    <!-- 🔴 2. Chanel Nº5 -->
     <div class="perfume">
-      <div class="etiqueta">2x1</div>
-      <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.51421.avif" alt="Chanel Nº5">
+      <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.1018.avif" alt="Tom Ford Black Orchid">
       <div class="perfume-content">
-        <h4>Chanel Nº5</h4>
-        <p>El clásico eterno de la feminidad y elegancia.</p>
-        <div class="price">
-          <span class="old-price">$160</span> $160 (2x1)
-        </div>
+        <h4>Tom Ford Black Orchid</h4>
+        <p>Oscuro, elegante y envolvente.</p>
+        <div class="price"><s>$210</s> <span style="color:red;">$175</span></div>
         <div class="buttons">
-          <a href="chanel.html"><button class="spec-btn">Especificaciones</button></a>
+          <a href="tomford.html"><button class="spec-btn">Especificaciones</button></a>
           <a href="carrito.html"><button class="add-btn">Añadir</button></a>
         </div>
       </div>
     </div>
 
-    <!-- 🔴 3. Creed Aventus -->
     <div class="perfume">
-      <div class="etiqueta">Envío Gratis</div>
-      <img src="https://creedboutique.com/cdn/shop/files/aventus-100ml-bottle_3413e5f4-3eee-40b3-8451-2546a370ec5b.jpg?v=1734710265&width=1500" alt="Creed Aventus">
+      <img src="https://fimgs.net/mdimg/perfume-thumbs/375x500.58255.avif" alt="Valentino Donna Born In Roma">
       <div class="perfume-content">
-        <h4>Creed Aventus</h4>
-        <p>El perfume del éxito: poderoso, elegante y varonil.</p>
-        <div class="price">$430</div>
+        <h4>Valentino Donna Born In Roma</h4>
+        <p>Femenino, juvenil y atrevido.</p>
+        <div class="price"><s>$200</s> <span style="color:red;">$160</span></div>
         <div class="buttons">
-          <a href="creed.html"><button class="spec-btn">Especificaciones</button></a>
+          <a href="valentino.html"><button class="spec-btn">Especificaciones</button></a>
           <a href="carrito.html"><button class="add-btn">Añadir</button></a>
         </div>
       </div>
