@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras | MM Perfumes</title>
+  <link rel="stylesheet" href="estilos tienda perfumes.css">
+
+  <style>
+    /* Estilos adicionales*/
+    .carrito-container {
+      padding: 120px 60px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+    }
+
+    th, td {
+      border-bottom: 1px solid #ddd;
+      padding: 14px;
+      text-align: center;
+    }
+
+    th {
+      background: #f4f4f4;
+    }
+
+    input[type="number"] {
+      width: 60px;
+      padding: 6px;
+    }
+
+    .total-box {
+      text-align: right;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .inactive {
+      opacity: 0.5;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>MM PERFUMES</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="index.html#coleccion">Colección</a>
+    <a href="promociones perfumes.html">Promociones</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="carrito.html">Carrito 🛒</a>
+  </nav>
+</header>
+
+<section class="carrito-container">
+  <h2>Carrito de Compras</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Añadir</th>
+        <th>Perfume</th>
+        <th>Precio</th>
+        <th>Cantidad</th>
+        <th>Subtotal</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr>
+        <td><input type="checkbox" class="activar" data-id="1"></td>
+        <td>Dior Sauvage</td>
+        <td>$145</td>
+        <td><input type="number" class="cantidad" data-id="1" min="1" value="1" disabled></td>
+        <td class="subtotal" data-id="1">$0</td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox" class="activar" data-id="2"></td>
+        <td>Chanel Nº5</td>
+        <td>$160</td>
+        <td><input type="number" class="cantidad" data-id="2" min="1" value="1" disabled></td>
+        <td class="subtotal" data-id="2">$0</td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox" class="activar" data-id="3"></td>
+        <td>Creed Aventus</td>
+        <td>$430</td>
+        <td><input type="number" class="cantidad" data-id="3" min="1" value="1" disabled></td>
+        <td class="subtotal" data-id="3">$0</td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox" class="activar" data-id="4"></td>
+        <td>Tom Ford Black Orchid</td>
+        <td>$210</td>
+        <td><input type="number" class="cantidad" data-id="4" min="1" value="1" disabled></td>
+        <td class="subtotal" data-id="4">$0</td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox" class="activar" data-id="5"></td>
+        <td>Baccarat Rouge 540</td>
+        <td>$325</td>
+        <td><input type="number" class="cantidad" data-id="5" min="1" value="1" disabled></td>
+        <td class="subtotal" data-id="5">$0</td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox" class="activar" data-id="6"></td>
+        <td>Clive Christian Nº1</td>
+        <td>$800</td>
+        <td><input type="number" class="cantidad" data-id="6" min="1" value="1" disabled></td>
+        <td class="subtotal" data-id="6">$0</td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox" class="activar" data-id="7"></td>
+        <td>YSL Libre</td>
+        <td>$180</td>
+        <td><input type="number" class="cantidad" data-id="7" min="1" value="1" disabled></td>
+        <td class="subtotal" data-id="7">$0</td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox" class="activar" data-id="8"></td>
+        <td>Armani Code</td>
+        <td>$150</td>
+        <td><input type="number" class="cantidad" data-id="8" min="1" value="1" disabled></td>
+        <td class="subtotal" data-id="8">$0</td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox" class="activar" data-id="9"></td>
+        <td>Gucci Bloom</td>
+        <td>$170</td>
+        <td><input type="number" class="cantidad" data-id="9" min="1" value="1" disabled></td>
+        <td class="subtotal" data-id="9">$0</td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox" class="activar" data-id="10"></td>
+        <td>Versace Eros</td>
+        <td>$140</td>
+        <td><input type="number" class="cantidad" data-id="10" min="1" value="1" disabled></td>
+        <td class="subtotal" data-id="10">$0</td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox" class="activar" data-id="11"></td>
+        <td>Valentino Donna Born In Roma</td>
+        <td>$200</td>
+        <td><input type="number" class="cantidad" data-id="11" min="1" value="1" disabled></td>
+        <td class="subtotal" data-id="11">$0</td>
+      </tr>
+
+      <tr>
+        <td><input type="checkbox" class="activar" data-id="12"></td>
+        <td>Paco Rabanne 1 Million</td>
+        <td>$135</td>
+        <td><input type="number" class="cantidad" data-id="12" min="1" value="1" disabled></td>
+        <td class="subtotal" data-id="12">$0</td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <div class="total-box">
+    Total: $<span id="total">0</span>
+  </div>
+
+<div class="checkout-section" style="margin-top: 30px; text-align: center;">
+    <button id="btnComprar" style="
+        padding: 12px 25px;
+        background: #c19a6b;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 6px;
+        letter-spacing: 1px;
+        transition: 0.3s;">
+        Realizar compra
+    </button>
+
+    <p id="mensajeCompra" style="
+        margin-top: 15px;
+        font-size: 1.1rem;
+        color: green;
+        font-weight: bold;
+        display: none;">
+        ¡Compra realizada con éxito! 🎉
+    </p>
+</div>
+
+<script>
+    document.getElementById("btnComprar").addEventListener("click", function () {
+        document.getElementById("mensajeCompra").style.display = "block";
+    });
+</script>
+
+</section>
+
+<script>
+  const precios = {
+    1: 145, 2: 160, 3: 430, 4: 210, 5: 325, 6: 800,
+    7: 180, 8: 150, 9: 170, 10: 140, 11: 200, 12: 135
+  };
+
+  const checkboxes = document.querySelectorAll(".activar");
+  const cantidades = document.querySelectorAll(".cantidad");
+
+  function actualizarTotal() {
+    let total = 0;
+
+    checkboxes.forEach(chk => {
+      const id = chk.dataset.id;
+      const cantidad = document.querySelector(`.cantidad[data-id="${id}"]`);
+      const subtotalCell = document.querySelector(`.subtotal[data-id="${id}"]`);
+
+      if (chk.checked) {
+        const subtotal = precios[id] * cantidad.value;
+        subtotalCell.textContent = "$" + subtotal;
+        total += subtotal;
+      } else {
+        subtotalCell.textContent = "$0";
+      }
+    });
+
+    document.getElementById("total").textContent = total;
+  }
+
+  checkboxes.forEach(chk => {
+    chk.addEventListener("change", function() {
+      const id = this.dataset.id;
+      const cantidad = document.querySelector(`.cantidad[data-id="${id}"]`);
+
+      cantidad.disabled = !this.checked;
+      actualizarTotal();
+    });
+  });
+
+  cantidades.forEach(cant => {
+    cant.addEventListener("input", actualizarTotal);
+  });
+</script>
+
+</body>
+</html>
